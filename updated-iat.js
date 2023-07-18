@@ -98,13 +98,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-                {word: 'Gia đình'},
-                {word: 'Kết hôn'},
-                {word: 'Kết hôn'},
-                {word: 'Họ hàng'},
-                {word: 'Đám cưới'},
-                {word: 'Nhà ở'},
-                {word: 'Con cái'}
+                {word: 'Hương'},
+					{word: 'Trang'},
+					{word: 'Thảo'},
+					{word: 'Nga'},
+					{word: 'Thu'},
+					{word: 'Yến'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
