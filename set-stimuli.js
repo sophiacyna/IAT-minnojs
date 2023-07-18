@@ -24,7 +24,7 @@ define(['pipAPI', 'https://sophiacyna.github.io/IAT-minnojs/updated-iat.js'], fu
 		category2 :	{
 			name : 'Gia đình', //Will appear in the data.
 			title : {
-				media : {word : 'White people'}, //Name of the category presented in the task.
+				media : {word : 'Gia đình'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
