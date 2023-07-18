@@ -3,9 +3,9 @@ define(['pipAPI', 'https://sophiacyna.github.io/IAT-minnojs/updated-iat.js'], fu
 
 	return iatExtension({
 		category1 : {
-			name : 'Black people', //Will appear in the data.
+			name : 'Việc kinh doanh', //Will appear in the data.
 			title : {
-				media : {word : 'Black people'}, //Name of the category presented in the task.
+				media : {word : 'Việc kinh doanh'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
@@ -22,19 +22,21 @@ define(['pipAPI', 'https://sophiacyna.github.io/IAT-minnojs/updated-iat.js'], fu
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 		category2 :	{
-			name : 'White people', //Will appear in the data.
+			name : 'Gia đình', //Will appear in the data.
 			title : {
 				media : {word : 'White people'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'yf1.jpg'}, 
-    			{image : 'yf4.jpg'}, 
-    			{image : 'yf5.jpg'}, 
-    			{image : 'ym2.jpg'}, 
-    			{image : 'ym3.jpg'}, 
-    			{image : 'ym5.jpg'}			], 
+			{word: 'Gia đình'},
+			{word: 'Kết hôn'},
+			{word: 'Kết hôn'},
+			{word: 'Họ hàng'},
+			{word: 'Đám cưới'},
+			{word: 'Nhà ở'},
+			{word: 'Con cái'}
+			], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
