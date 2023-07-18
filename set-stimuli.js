@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://sophiacyna.github.io/IAT-minnojs/exact-copy.js'], function(APIConstructor, iatExtension){
+define(['pipAPI', 'https://sophiacyna.github.io/IAT-minnojs/updated-iat.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
 	return iatExtension({
