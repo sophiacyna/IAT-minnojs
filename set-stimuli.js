@@ -10,12 +10,13 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {text : 'test'}, 
-    			{image : 'black2.jpg'}, 
-    			{image : 'black3.jpg'}, 
-    			{image : 'black4.jpg'}, 
-    			{image : 'black5.jpg'}, 
-    			{image : 'black6.jpg'}
+            {word: 'Việc kinh doanh'},
+            {word: 'Lợi nhuận'},
+            {word: 'Đầu tư'},
+            {word: 'Sự quản lý'},
+            {word: 'Lãnh đạo'},
+            {word: 'Nhà doanh nghiệp'},
+            {word: 'Chiến lược'}
 			], 
 			//Stimulus css (style)
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
