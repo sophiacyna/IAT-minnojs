@@ -45,7 +45,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
                 {word: 'Đầu tư'},
                 {word: 'Sự quản lý'},
                 {word: 'Lãnh đạo'},
-                {word: 'Nhà doanh nghiệp'},
+                {word: 'Doanh nhân'},
                 {word: 'Chiến lược'}
                 ], 
 				//Stimulus css (style)
@@ -61,10 +61,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
                 {word: 'Gia đình'},
                 {word: 'Kết hôn'},
-                {word: 'Kết hôn'},
+                {word: 'Cha mẹ'},
                 {word: 'Họ hàng'},
                 {word: 'Đám cưới'},
-                {word: 'Nhà ở'},
+                {word: 'Nhà cửa'},
                 {word: 'Con cái'}
 				],
 				//Stimulus css
@@ -140,12 +140,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			remindError : true,
 
 			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
-			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Press the other key to continue.<p/>',
+			'Nếu chọn sai, chữ <font color="#ff0000"><b>X</b></font> màu đỏ sẽ xuất hiện. ' +
+			'Bấm vào phím còn lại để tiếp tục.<p/>',
 
 			remindErrorTextTouch : '<p align="center" style="font-size:"1.4em"; font-family:arial">' +
-			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Touch the other side to continue.<p/>',
+			'Nếu chọn sai, chữ <font color="#ff0000"><b>X</b></font> màu đỏ sẽ xuất hiện. ' +
+			'Chạm vào bên còn lại để tiếp tục.<p/>',
 
 			errorCorrection : true, //Should participants correct error responses?
 			errorFBDuration : 500, //Duration of error feedback display (relevant only when errorCorrection is false)
@@ -163,8 +163,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			
 			instWidth : 99, //The width of the instructions stimulus
             
-			finalText : 'Press space to continue to the next task', 
-			finalTouchText : 'Touch the bottom green area to continue to the next task',
+			finalText : 'Bấm phím cách/space để tiếp tục đến nhiệm vụ tiếp theo', 
+			finalTouchText : 'Chạm vào vùng màu xanh lá cây bên dưới để tiếp tục đến nhiệm vụ tiếp theo',
 
 			touchMaxStimulusWidth : '50%', 
 			touchMaxStimulusHeight : '50%', 
@@ -178,12 +178,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>'+
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Đặt một ngón của bàn tay trái vào phím <b>E</b> để chọn các từ thuộc nhóm <font color="#0000ff">leftAttribute.</font>' +
+				'<br/> Đặt một ngón của bàn tay phải vào phím <b>I</b> để chọn các từ thuộc nhóm <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'Nếu chọn sai, chữ <font color="#ff0000"><b>X</b></font> màu đỏ sẽ xuất hiện. ' +
+				'Bấm vào phím còn lại để tiếp tục.<br/>' +
+				'<u> Hãy hoàn thành nhiệm vụ nhanh nhất có thể </u> tuy nhiên vẫn đảm bảo độ chính xác.<br/><br/></p>'+
+				'<p align="center">Bấm vào phím <b>cách/space</b> khi đã sẵn sàng bắt đầu.</font></p></div>',
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -191,26 +191,26 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Put a left finger over the the <b>left</b> green area for items that belong to the category <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/>',
-						'Items will appear one at a time.<br/>',
+						'Đặt một ngón của bàn tay <b>trái</b> vào vùng màu xanh lá cây để chọn các từ thuộc nhóm <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Đặt một ngón của bàn tay <b>phải</b> vào vùng màu xanh lá cây để chọn các từ thuộc nhóm <font color="#0000ff">rightAttribute</font>.<br/>',
+						'Các từ sẽ lần lượt xuất hiện.<br/>',
 						'<br/>',
-						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.',
+						'Nếu chọn sai, chữ <font color="#ff0000"><b>X</b></font> màu đỏ sẽ xuất hiện. Chạm vào bên còn lại. <u>Hãy hoàn thành nhiệm vụ nhanh nhất có thể</u> tuy nhiên vẫn đảm bảo độ chính xác.',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Chạm vào<b>vùng dưới </b> màu xanh lá cây để bắt đầu.</p>',
 				'</div>'
 			].join('\n'),
 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#336600">leftCategory</font>. ' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#336600">rightCategory</font>.<br/>' +
-				'Items will appear one at a time.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>'+
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Đặt một ngón của bàn tay trái vào phím <b>E</b> để chọn các từ thuộc nhóm <font color="#336600">leftCategory</font>. ' +
+				'<br/>Đặt một ngón của bàn tay phải vào phím <b>I</b> để chọn các từ thuộc nhóm <font color="#336600">rightCategory</font>.<br/>' +
+				'Các từ sẽ lần lượt xuất hiện.<br/><br/>' +
+				'Nếu chọn sai, chữ <font color="#ff0000"><b>X</b></font> màu đỏ sẽ xuất hiện. ' +
+				'Bấm vào phím còn lại để tiếp tục.<br/>' +
+				'<u>Hãy hoàn thành nhiệm vụ nhanh nhất có thể</u> tuy nhiên vẫn đảm bảo độ chính xác.<br/><br/></p>'+
+				'<p align="center">Bấm vào phím <b>cách/space</b> khi đã sẵn sàng bắt đầu.</font></p></div>',
 			instCategoriesPracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -218,26 +218,26 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Put a left finger over the <b>left</b> green area for items that belong to the category <font color="#336600">leftCategory</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#336600">rightCategory</font>.<br/>',
-						'Items will appear one at a time.<br/>',
+						'Đặt một ngón của bàn tay <b>trái</b> vào vùng màu xanh lá cây để chọn các từ thuộc nhóm <font color="#336600">leftCategory</font>.<br/>',
+						'Đặt một ngón của bàn tay <b>phải</b> vào vùng màu xanh lá cây để chọn các từ thuộc nhóm <font color="#336600">rightCategory</font>.<br/>',
+						'Các từ sẽ lần lượt xuất hiện.<br/>',
 						'<br/>',
-						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.',
+						'Nếu chọn sai, chữ <font color="#ff0000"><b>X</b></font> màu đỏ sẽ xuất hiện. Chạm vào bên còn lại. <u>Hãy hoàn thành nhiệm vụ nhanh nhất có thể</u> tuy nhiên vẫn đảm bảo độ chính xác.',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Chạm vào <b>vùng dưới </b> màu xanh lá cây để bắt đầu.</p>',
 				'</div>'
 			].join('\n'),
 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Use the <b>E</b> key for <font color="#336600">leftCategory</font> and for <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#336600">rightCategory</font> and for  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Each item belongs to only one category.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' + 
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Dùng phím <b>E</b> cho <font color="#336600">leftCategory</font> và cho <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Dùng phím <b>I</b> cho <font color="#336600">rightCategory</font> và cho <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Mỗi từ sẽ chỉ thuộc một nhóm duy nhất.<br/><br/>' +
+				'Nếu chọn sai, chữ <font color="#ff0000"><b>X</b></font> màu đỏ sẽ xuất hiện. ' +
+				'Bấm vào phím còn lại để tiếp tục.<br/>' + 
+				'<u>Hãy hoàn thành nhiệm vụ nhanh nhất có thể</u> tuy nhiên vẫn đảm bảo độ chính xác.<br/><br/></p>' +
+				'<p align="center">Bấm vào phím <b>cách/space</b> khi đã sẵn sàng bắt đầu.</font></p></div>',
 			instFirstCombinedTouch:[
 				'<div>',
 					'<p align="center">',
@@ -246,23 +246,23 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<br/>',
 					'<br/>',
 					'<p align="left" style="margin-left:5px">',
-						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.</br>',
-						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.</br>',
-							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.</br>',
+						'Đặt một ngón của bàn tay <b>trái</b> vào vùng màu xanh lá cây để chọn các từ thuộc nhóm <font color="#336600">leftCategory</font> và nhóm <font color="#0000ff">leftAttribute</font>.</br>',
+						'Đặt một ngón của bàn tay <b>phải</b> vào vùng màu xanh lá cây để chọn các từ thuộc nhóm <font color="#336600">rightCategory</font> và nhóm <font color="#0000ff">rightAttribute</font>.</br>',
+							'Nếu chọn sai, chữ <font color="#ff0000"><b>X</b></font> màu đỏ sẽ xuất hiện. Chạm vào bên còn lại. <u>Hãy hoàn thành nhiệm vụ nhanh nhất có thể</u> tuy nhiên vẫn đảm bảo độ chính xác.</br>',
 						'</p>',
-						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+						'<p align="center">Chạm vào <b>vùng dưới </b> màu xanh lá cây để bắt đầu.</p>',
 				'</div>'
 			].join('\n'),
 
 			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'This is the same as the previous part.<br/>' +
-				'Use the <b>E</b> key for <font color="#336600">leftCategory</font> and for <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#336600">rightCategory</font> and for  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Each item belongs to only one category.<br/><br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Nhiệm vụ này giống các nhiệm vụ trước.<br/>' +
+				'Dùng phím <b>E</b> cho <font color="#336600">leftCategory</font> và cho <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Dùng phím <b>I</b> cho <font color="#336600">rightCategory</font> và cho <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Mỗi từ sẽ chỉ thuộc một nhóm duy nhất.<br/><br/>' +
+				'<u>Hãy hoàn thành nhiệm vụ nhanh nhất có thể</u> tuy nhiên vẫn đảm bảo độ chính xác.<br/><br/></p>' +
+				'<p align="center">Bấm vào phím <b>cách/space</b> khi đã sẵn sàng bắt đầu.</font></p></div>',
 			instSecondCombinedTouch:[
 				'<div>',
 					'<p align="center"><u>Part blockNum of nBlocks</u></p>',
@@ -270,23 +270,23 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<br/>',
 
 					'<p align="left" style="margin-left:5px">',
-						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.<br/>',
+						'Đặt một ngón của bàn tay <b>trái</b> vào vùng màu xanh lá cây để chọn các từ thuộc nhóm <font color="#336600">leftCategory</font> và nhóm <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Đặt một ngón của bàn tay <b>phải</b> vào vùng màu xanh lá cây để chọn các từ thuộc nhóm <font color="#336600">rightCategory</font> và nhóm <font color="#0000ff">rightAttribute</font>.<br/>',
 						'<br/>',
-						'<u>Go as fast as you can</u> while being accurate.<br/>',
+						'<u>Hãy hoàn thành nhiệm vụ nhanh nhất có thể</u> tuy nhiên vẫn đảm bảo độ chính xác.<br/>',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Chạm vào <b>vùng dưới </b> màu xanh lá cây để bắt đầu.</p>',
 				'</div>'
 			].join('\n'),
 
 			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<b>Watch out, the labels have changed position!</b><br/>' +
-				'Put the left finger on the <b>E</b> key for <font color="#336600">leftCategory</font>.<br/>' +
-				'Put the right finger on the <b>I</b> key for <font color="#336600">rightCategory</font>.<br/><br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'<b>Chú ý, tên các nhóm đã thay đổi vị trí!</b><br/>' +
+				'Đặt một ngón của bàn tay trái vào phím <b>E</b> để chọn các từ thuộc nhóm <font color="#336600">leftCategory</font>.<br/>' +
+				'Đặt một ngón của bàn tay phải vào phím <b>I</b> để chọn các từ thuộc nhóm <font color="#336600">rightCategory</font>.<br/><br/>' +
+				'<u>Hãy hoàn thành nhiệm vụ nhanh nhất có thể</u> tuy nhiên vẫn đảm bảo độ chính xác.<br/><br/></p>' +
+				'<p align="center">Bấm vào phím <b>cách/space</b> khi đã sẵn sàng bắt đầu.</font></p></div>',
 			instSwitchCategoriesTouch: [
 				'<div>',
 					'<p align="center">',
@@ -294,14 +294,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Watch out, the labels have changed position!<br/>',
-							'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items.<br/>',
-							'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items.<br/>',
-							'Items will appear one at a time.',
+						'Chú ý, tên các nhóm đã thay đổi vị trí!<br/>',
+							'Đặt một ngón của bàn tay <b>trái</b> vào vùng màu xanh lá cây để chọn các từ thuộc nhóm <font color="#336600">leftCategory</font> items.<br/>',
+							'Đặt một ngón của bàn tay <b>phải</b> vào vùng màu xanh lá cây để chọn các từ thuộc nhóm <font color="#336600">rightCategory</font> items.<br/>',
+							'Các từ sẽ lần lượt xuất hiện.',
 							'<br/>',
-							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.<br/>',
+							'Nếu chọn sai, chữ <font color="#ff0000"><b>X</b></font> màu đỏ sẽ xuất hiện. Chạm vào bên còn lại. <u>Hãy hoàn thành nhiệm vụ nhanh nhất có thể</u> tuy nhiên vẫn đảm bảo độ chính xác.<br/>',
 						'</p>',
-						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+						'<p align="center">Chạm vào <b>vùng dưới </b> màu xanh lá cây để bắt đầu.</p>',
 				'</div>'
 			].join('\n'),
 
