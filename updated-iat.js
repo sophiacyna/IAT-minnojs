@@ -33,7 +33,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},
 			//When scoring, we will consider the compatible condition the pairing condition that requires response with one key to [category1,attribute1] and the other key to [category2,attribute2]
 			category1 : {
-				name : 'Việc kinh doanh', //Will appear in the data and in the default feedback message.
+				name : 'Việc kinh doanh ...', //Will appear in the data and in the default feedback message.
 				title : {
 					media : {word : 'Việc kinh doanh'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
