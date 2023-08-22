@@ -10,13 +10,13 @@ define(['pipAPI', 'https://sophiacyna.github.io/IAT-minnojs/updated-iat.js'], fu
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-            {word: 'Việc kinh doanh'},
-            {word: 'Lợi nhuận'},
-            {word: 'Đầu tư'},
+			{word: 'Việc kinh doanh'},
+            {word: 'Sự nghiệp'},
+            {word: 'Doanh nghiệp'},
             {word: 'Sự quản lý'},
-            {word: 'Lãnh đạo'},
-            {word: 'Nhà doanh nghiệp'},
-            {word: 'Chiến lược'}
+            {word: 'Tiền lương'},
+            {word: 'Văn phòng'},
+            {word: 'Chuyên nghiệp'}
 			], 
 			//Stimulus css (style)
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}

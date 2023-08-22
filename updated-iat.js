@@ -41,12 +41,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
                 {word: 'Việc kinh doanh'},
-                {word: 'Lợi nhuận'},
-                {word: 'Đầu tư'},
-                {word: 'Sự quản lý'},
-                {word: 'Lãnh đạo'},
-                {word: 'Doanh nhân'},
-                {word: 'Chiến lược'}
+				{word: 'Sự nghiệp'},
+				{word: 'Doanh nghiệp'},
+				{word: 'Sự quản lý'},
+				{word: 'Tiền lương'},
+				{word: 'Văn phòng'},
+				{word: 'Chuyên nghiệp'}
                 ], 
 				//Stimulus css (style)
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
