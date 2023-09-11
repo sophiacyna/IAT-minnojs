@@ -204,8 +204,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Đặt một ngón của bàn tay trái vào phím <b>E</b> để chọn các từ thuộc nhóm <font color="#336600">leftCategory</font>. ' +
-				'<br/>Đặt một ngón của bàn tay phải vào phím <b>I</b> để chọn các từ thuộc nhóm <font color="#336600">rightCategory</font>.<br/>' +
+				'Chạm vào vùng màu xanh lá cây bên <b>trái</b> để chọn các từ thuộc nhóm <font color="#336600">leftCategory</font>. ' +
+				'<br/>Chạm vào vùng màu xanh lá cây bên <b>phải</b> để chọn các từ thuộc nhóm <font color="#336600">rightCategory</font>.<br/>' +
 				'Các từ sẽ lần lượt xuất hiện.<br/><br/>' +
 				'Nếu chọn sai, chữ <font color="#ff0000"><b>X</b></font> màu đỏ sẽ xuất hiện. ' +
 				'Bấm vào phím còn lại để tiếp tục.<br/>' +
@@ -218,8 +218,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Đặt một ngón của bàn tay <b>trái</b> vào vùng màu xanh lá cây để chọn các từ thuộc nhóm <font color="#336600">leftCategory</font>.<br/>',
-						'Đặt một ngón của bàn tay <b>phải</b> vào vùng màu xanh lá cây để chọn các từ thuộc nhóm <font color="#336600">rightCategory</font>.<br/>',
+						'Chạm vào vùng màu xanh lá cây bên <b>trái</b> để chọn các từ thuộc nhóm <font color="#336600">leftCategory</font>.<br/>',
+						'Chạm vào vùng màu xanh lá cây bên <b>phải</b> để chọn các từ thuộc nhóm <font color="#336600">rightCategory</font>.<br/>',
 						'Các từ sẽ lần lượt xuất hiện.<br/>',
 						'<br/>',
 						'Nếu chọn sai, chữ <font color="#ff0000"><b>X</b></font> màu đỏ sẽ xuất hiện. Chạm vào bên còn lại. <u>Hãy hoàn thành nhiệm vụ nhanh nhất có thể</u> tuy nhiên vẫn đảm bảo độ chính xác.',
